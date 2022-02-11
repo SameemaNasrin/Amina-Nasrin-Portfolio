@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-color : #F2F2F2;
+}
+
+#hero-section{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+#hero-section h3{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.53vw;
+    color: var(--primary-color);
+    letter-spacing: 0.7px;
+}
+
+#hero-section h1{
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 7vw;
+    color: var(--primary-color);
+    margin-top: 1.5vh;
+}
+
+#hero-section h6{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vw;
+    line-height: 171px;
+    color: #E0E0E0;
+    line-height: 1vw;
+    margin-top: 15vh;
+}
+
+#hero-section h3, h1, h6{
+    position: relative;
+    top: 30vh;
+}
+
+#designer{
+    text-shadow: 5px 5px 100px #a32c9bde, -5px -5px 100px #a32c9bde;
+}
+
+#bulb-on{
+    position: fixed;
+    max-width: 1vw;
+    top: 7vh;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#bulb-off{
+    position: relative;
+    max-width: 1.4vw;
+    top: 7vh;
+    z-index: 99;
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+    transition-timing-function: ease-in;
+}
+
+
+#bulb-off:hover + #bulb-on{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+#bulb-off:hover{
+    opacity: 0;
+    transform: translateY(-5px);
+}
+
+@keyframes bulb-hover{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
+.red-tooltip + .tooltip > .tooltip-arrow {border-bottom-color: #f00;}
+
+#stars{
+    position: fixed;
+    height: 98vh;
+    width: 98vw;
+    opacity: 0.5;
+    animation: moveStar 250s infinite linear;
+}
+
+@keyframes moveStar{
+    0%{
+        transform: rotate(0deg) translateX(100px);
+        transform-origin: center;
+    }
+    100%{
+        transform: rotate(360deg) translateX(100px);
+        transform-origin: center;
+    }
+
+}
+
+#star-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.solar-system{
+    position: fixed;
+    opacity: 0.5;
+}
+
+#saturn{
+    top: 40vh;
+    left: 7vw;
+    max-width: 2vw;
+    animation: moveSaturn 4s infinite linear alternate-reverse;
+}
+
+@keyframes moveSaturn{
+    0%{
+        transform: translate(0px, 0px);
+        transform-origin: center;
+    }
+    100%{
+        transform: translate(-20px, 20px);
+        transform-origin: center;
+    }
+}
+
+
+@keyframes moveSaturn1{
+    0%{
+        transform: rotate(0deg) translateX(40vw);
+        transform-origin: center;
+    }
+    100%{
+        transform: rotate(3600deg) translateX(40vw);
+        transform-origin: center;
+    }
+
+}
+
+#meteor1{
+    top: 30vh;
+    left: -15vw;
+    animation: moveMeteor 2s;
+    animation-delay: 3s;
+    
+}
+
+
+@keyframes moveMeteor{
+    0%{
+        transform: translateX(0) translateY(0);
+        transform-origin: center;
+    }
+    100%{
+        transform: translateX(90vw) translateY(90vh);
+        transform-origin: center;
+    }
+}
+
+#shooting-star{
+    top: 80vh;
+    left: 20vw;
+    animation: shootingStar 2s infinite;
+}
+
+#welcome{
+    animation: welcomeSpace 2s infinite;
+}
+
+@keyframes shootingStar{
+    50%{
+        transform: scale(1.15);
+        opacity: 0.6;
+    }
+}
+
+@keyframes welcomeSpace{
+    50%{
+        transform: scale(0.99);
+        opacity: 0.7;
+    }
+}
+
+#meteor2{
+    top: 10vh;
+    left: 70vw;
+}
+
+
+.scroll{
+    position: relative;
+    top: 25vh;
+    max-width: 10vh;
+}
+
+.container-item{
+    display: flex; justify-content: center;
+} 
+
+#rocket{
+    position: absolute;
+    top: 86.55vh;
+    max-width: 3vh;
+    animation: scroll 1s ease-in-out infinite alternate;
+}
+
+@keyframes scroll{
+    0%{
+        top: 86vh;
+    }
+    100%{
+        top: 87vh;
+    }
+}
+
+.typewrite{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.typewrite:hover{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.typewrite{
+    position: absolute;
+}
+
+.typewrite-container{
+    width: 55vw;
+    margin: auto;
+}
