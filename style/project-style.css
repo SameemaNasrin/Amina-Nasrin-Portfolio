@@ -2,6 +2,12 @@
     --primary-color : #F2F2F2;
 }
 
+.item{
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+}
+
 .outer{
     overflow-x: hidden;
 }
@@ -28,12 +34,12 @@
     color: #BDBDBD;
     position: absolute;
     top: 135vh;
-    left: 16vw;
+    left: 10vw;
 }
 
 #desc-bumble{
     position: absolute;
-    left: 16vw;
+    left: 10vw;
     top: 140vh;
     width: 40vw;
     font-family: Montserrat;
@@ -49,7 +55,7 @@
 
 #page-count{        
     position: absolute;
-    left: 16vw;
+    left: 10vw;
     top: 167vh;
 
     font-family: Montserrat;
@@ -70,36 +76,36 @@
 
 #bumble-base{
     top: 115vh;
-    left: 40vw;
-    max-width: 50vw;
+    left: 34vw;
+    max-width: 55vw;
 }
 
 #bumble-mobile{
-    left: 55vw;
+    left: 52vw;
     top: 120vh;
     max-height: 60vh;
 }
 
 #bumble-pic1{
-    left: 45.2vw;
+    left: 42.5vw;
     top: 122vh;
     max-height: 50vh;
 }
 
 #bumble-pic2{
-    left: 68.5vw;
+    left: 65.5vw;
     top: 155vh;
     max-height: 10vh;
 }
 
 #bumble-pic3{
-    left: 60vw;
+    left: 58vw;
     top: 120vh;
     max-height: 40vh;
 }
 
 #bumble-pic4{
-    left: 55vw;
+    left: 52vw;
     top: 130vh;
     max-height: 10vh;
 }

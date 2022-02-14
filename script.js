@@ -54,3 +54,19 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+
+//NAV BAR EFFECT
+var screenHeight = screen.height;
+var element = document.getElementById("nav-bar");
+window.onscroll = function(e) {
+  var currentScrollPos = window.pageYOffset + 200;
+  if (currentScrollPos > screenHeight) {
+    element.style.display = "flex";
+    element.classList.add("show-nav");
+  }
+   else{
+        element.style.display = "none";
+        element.classList.remove("show-nav");
+  }
+}
