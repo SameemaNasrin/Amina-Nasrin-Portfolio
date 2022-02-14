@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     --primary-color : #F2F2F2;
-    background-color: black;
 }
 
 #hero-section{
@@ -116,6 +115,9 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    overflow-x: hidden;
+    z-index: -1;
+    background-color: black;
 }
 
 .solar-system{

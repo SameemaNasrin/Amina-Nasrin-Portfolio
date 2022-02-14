@@ -13,6 +13,106 @@
     overflow-x: hidden;
 }
 
-.brief p{
-    color: red;
+#project-section .brief{
+    z-index: 99;
+    margin: 4vw;
+}
+
+#conceptual-design{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    color: #BDBDBD;
+    position: absolute;
+    top: 135vh;
+    left: 16vw;
+}
+
+#desc-bumble{
+    position: absolute;
+    left: 16vw;
+    top: 140vh;
+    width: 40vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 4vw;
+    color: #F2F2F2;
+    text-shadow: 1px 0px 19px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+
+#page-count{        
+    position: absolute;
+    left: 16vw;
+    top: 167vh;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1vw;
+    line-height: 20px;
+    /* identical to box height */
+
+    letter-spacing: 0.8rem;
+
+    color: #9192A0;
+}
+
+#bumble-pics > img{
+    position: absolute;
+}
+
+#bumble-base{
+    top: 115vh;
+    left: 40vw;
+    max-width: 50vw;
+}
+
+#bumble-mobile{
+    left: 55vw;
+    top: 120vh;
+    max-height: 60vh;
+}
+
+#bumble-pic1{
+    left: 45.2vw;
+    top: 122vh;
+    max-height: 50vh;
+}
+
+#bumble-pic2{
+    left: 68.5vw;
+    top: 155vh;
+    max-height: 10vh;
+}
+
+#bumble-pic3{
+    left: 60vw;
+    top: 120vh;
+    max-height: 40vh;
+}
+
+#bumble-pic4{
+    left: 55vw;
+    top: 130vh;
+    max-height: 10vh;
+}
+
+ #bumble-pic1, #bumble-pic2, #bumble-pic3, #bumble-pic4{
+    animation: move 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(4px);
+    }
 }
