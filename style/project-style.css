@@ -1,7 +1,8 @@
+*{
+    --primary-color : #F2F2F2;
+}
+
 .outer{
-    /* scroll-snap-type: y mandatory; */
-    /* overflow-y: scroll; */
-    /* height: 100vh; */
     overflow-x: hidden;
 }
 
@@ -9,7 +10,9 @@
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
-    background-color: black;
-    background-image: url(images/Noise/Noise12.svg);
     overflow-x: hidden;
+}
+
+.brief p{
+    color: red;
 }
